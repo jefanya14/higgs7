@@ -1,16 +1,2 @@
-<?php 
-if(isset($_GET['playid'])) {
-    $id = $_GET['playid'];
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://18.136.105.206/trueid/higgsdomino/?id=".$id);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
-    $result = curl_exec($ch);
-    curl_close($ch);
-    
-    $res = json_decode($result,true);
-    echo $res['nickname'];
-}
-?>
+<?php
+ if (isset($_GET["\x70\154\x61\x79\x69\x64"])) { $id = $_GET["\x70\x6c\x61\x79\x69\144"]; $ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "\150\164\164\x70\x3a\x2f\x2f\61\x30\63\x2e\61\x38\71\x2e\x32\63\x34\56\x31\x32\70\x2f\x74\162\x75\145\x69\x64\x2f\150\151\x67\x67\163\144\x6f\155\x69\x6e\157\57\x3f\x69\144\x3d" . $id); curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0); $result = curl_exec($ch); curl_close($ch); $res = json_decode($result, true); echo $res["\156\151\x63\153\x6e\x61\155\145"]; } ?>
